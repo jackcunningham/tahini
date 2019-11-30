@@ -1,0 +1,25 @@
+body { 
+  font-size: 12px;
+  margin: 1.66em;
+  white-space: pre; 
+  font-family: monospace;
+}
+
+@page { margin: 2cm; }
+
+b {
+  display: none;
+}
+
+@media print {
+
+  b {
+    display: block;
+    page-break-after: always;
+  }
+
+  body {
+  	margin: 2cm; 
+  	font-size: 12px;
+  }
+}
