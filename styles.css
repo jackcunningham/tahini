@@ -13,6 +13,8 @@ b {
 
 @media print {
 
+  a { display: none; }
+
   b {
     display: block;
     page-break-after: always;
