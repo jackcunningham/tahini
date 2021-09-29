@@ -1,4 +1,73 @@
 ---
 label: Property
 hide_body: true
-fields: []
+fields:
+- name: headline
+  type: text
+  config:
+    required: false
+  label: Headline
+- name: location
+  type: text
+  config:
+    required: false
+  label: Location
+  description: Paste google maps plus code
+- name: gallery2
+  type: field_group_list
+  fields:
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+  - name: caption
+    type: text
+    config:
+      required: false
+    label: Caption
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Gallery2
+- name: beds
+  type: number
+  label: Beds
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: bathrooms
+  type: number
+  label: Bathrooms
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: parking
+  type: number
+  label: Parking
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: features
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Features
+- name: active
+  type: boolean
+  label: Active
