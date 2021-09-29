@@ -71,3 +71,8 @@ fields:
 - name: active
   type: boolean
   label: Active
+- name: contact
+  type: include
+  config: {}
+  template: franchise
+  label: Contact
